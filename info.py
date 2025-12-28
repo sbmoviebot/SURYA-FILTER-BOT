@@ -26,7 +26,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003561008121'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003634285978').split()]  # For Multiple Id Use One Space Between Each.
@@ -90,7 +90,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+UvY30mviqP04ZGZl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+WqSDRlXTxJNkODA1')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'sbfilter1_bot) # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'sbfilter1_bot') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/suryabm180')
 
 # True Or False
@@ -196,5 +196,6 @@ else:
 # Don't Remove Credit @suryabm180
 # Subscribe YouTube Channel For Amazing Bot @
 # Ask Doubt on telegram @suryabm180
+
 
 
